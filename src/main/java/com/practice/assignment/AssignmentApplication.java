@@ -1,7 +1,6 @@
 package com.practice.assignment;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import com.practice.assignment.Service.HotelService;
@@ -13,6 +12,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
+
 @SpringBootApplication
 public class AssignmentApplication implements CommandLineRunner{
 	@Autowired
@@ -22,6 +23,7 @@ public class AssignmentApplication implements CommandLineRunner{
 		SpringApplication.run(AssignmentApplication.class, args);
 	}
 
+	
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
@@ -34,7 +36,7 @@ public class AssignmentApplication implements CommandLineRunner{
 		rooms.add(room2);
 		rooms.add(room3);
 		hotel.setRooms(rooms);
-		service.createHotel(hotel);
+		//service.createHotel(hotel);
 	}
 
 }

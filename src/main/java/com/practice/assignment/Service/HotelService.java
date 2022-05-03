@@ -80,6 +80,7 @@ public class HotelService {
                 room.setCost(cost);
             }
         }
+         repo.save(hotel2);
         return hotel2;
     }
 }
